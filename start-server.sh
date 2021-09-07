@@ -1,4 +1,5 @@
 #!/bin/bash
 
-uvicorn main:app --reload >/dev/null &
-ngrok http 443
+python3 ./app.py >/dev/null 2&1
+ngrok http 3000
+
